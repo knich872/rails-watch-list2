@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>My movie lists</h1>
+  <i class="fa-solid fa-star-sharp" style=""></i>
+  <% @lists.each do |list| %>
+    <div>
+      <%= list.name %>
+      <%= link_to "See list details", list %>
+    </div>
+  <% end %>
+  <div>
+  <%= link_to "+New movie list", new_list_path %>
+  </div>
+</div>
